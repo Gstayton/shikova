@@ -1,0 +1,4 @@
+/node_modules/*
+/data/*
+*.csr
+.tern-project

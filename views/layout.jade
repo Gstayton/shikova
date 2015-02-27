@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+  head
+    title='Shikova Corp Headquarters'
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+    script(src='https://code.jquery.com/jquery-1.11.2.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+      
+    meta(charset='utf-8')
+    
+  body
+    script(src='/javascripts/global.js')
+    block header
+      nav#header.container-fluid
+        #loginContainer.col-md-4.pull-right.v-align
+          form#loginForm.form-inline
+            .form-group
+              label.sr-only(for=loginUsername) Username
+              input#loginUsername.form-control(type='text', placeholder='Username')
+            .form-group
+              label.sr-only(for=loginPassword) Password
+              input#loginPassword.form-control(type='password', placeholder='Password')
+            button#btnLogin.btn.btn-primary(type=submit) Login
+    block content
