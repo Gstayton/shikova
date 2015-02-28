@@ -1,14 +1,3 @@
 body {
-}
-
-nav {
-  height: 75px;
-}
-
-#header {
-  background-color: grey;
-}
-
-#debugInfo {
-  background-color: #CCC
+  margin-top: 75px;
 }

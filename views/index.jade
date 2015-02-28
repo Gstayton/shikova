@@ -1,18 +1,34 @@
 extends layout
 
 block content
-  #debugInfo
-    h2 debugging
-    #debugging
-    p
-      strong Username:
-      | <span id='dbgUsername'></span>
-      br
-      strong Log in succesful:
-      | <span id='dbgLogin'></span>
-    h2 User List
-    #userList
-      table
-        thead
-          th UserName
-        tbody
+  #body.container
+    .row
+      //Article Content
+      .col-md-8
+        h1 Latest Posts
+        article
+          h2: a(href="singlepost.html") Techblogs and You
+          .row
+            .group1.col-sm-6.col-md-6
+              span.glyphicon.glyphicon-folder-open: a(href="#") Tech
+              span.glyphicon.glyphicon-bookmark: a(href="#") Meta
+            .group2.col-sm-6.col-md-6
+              span.glyphicon.glyphicon-pencil: a(href="singlepost.html#comments") 20 Comments
+              span.glyphicon.glyphicon-time January 2, 2015 2:00 PM
+
+            img.img-responsive(src="//placehold.it/900x300")
+            br
+
+            p.lead Choro mnesarchum necessitatibus est at. Ut liberavisse suscipiantur vix. Saperet tincidunt per no, eu elitr suscipit qui, est cu impetus appareat sadipscing. Eum unum sanctus id, justo sadipscing at usu. Dicant scripta duo ut, an sit solum legimus consequat. Eu convenire similique eum.
+            p Ut aeque affert consequuntur vim. Esse adhuc everti ad per. Duo no etiam exerci altera. Usu eius latine voluptua id, duo justo docendi epicurei cu. Sit dicunt concludaturque ad. Pri soluta nemore democritum ut, posse option periculis sea cu. Et mea ancillae corrumpit iracundia, choro dolorum detracto ex vim.
+
+            p.text-right: a.text-right(href="singlepost.html") continue reading...
+            hr
+        ul.pager
+          li.previous: a(href="#") <- Older
+          li.next: a(href="#") Newer ->
+      //Sidebar
+      .col-md-4
+        .well.text-center
+          p.lead Don't want to miss updates? Click below!
+          button.btn.btn-primary.btn-lg Subscribe to my feed

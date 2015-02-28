@@ -1,0 +1,24 @@
+@font-face
+{
+  font-family:'coalition';
+  src:url('/projects/emma/faq/fonts/coalition_v2.ttf'),
+    url('projects/emma/faq/fonts/coalition_v2.oet') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+
+body {
+  background-image:url("/projects/emma/faq/images/bg.jpg");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+#title {
+  font-family: 'coalition';
+  color: white;
+  font-size: 60;
+}
+
+.question {
+  font-weight: bold;
+}
